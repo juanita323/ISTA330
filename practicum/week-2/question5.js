@@ -12,6 +12,25 @@ output: 3
 */
 
 var minimalReduction = function(n) {
+    let final = -1;
+    if (n === 0)
+        return 0;
+    else {
+        if (n % 3 === 0) {
+            let track = minimalReduction(n / 3) + 1;
+            if (track < final || final === -1)
+                final = track;
+        }
+        if (n % 4 === 0) {
+            let track = minimalReduction(n / 4) + 1;
+            if (track < final || final === -1)
+                final = track;
+        }
+        let track = minimalReduction(n - 1) + 1;
+        if (track < final || final === -1)
+            final = track;
+        }
+        return final;
 
 };
 
