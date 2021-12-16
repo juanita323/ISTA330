@@ -31,6 +31,5 @@ var minimalReduction = function(n) {
             final = track;
         }
         return final;
-
 };
 
