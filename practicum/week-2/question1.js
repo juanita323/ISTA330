@@ -6,5 +6,9 @@ For example given the input array [5, 6, 1], the running sum is
 */
 
 var runningSum = function(input) {
-   
+    let result = 0
+    let sum = nums.map(a => {
+        return result = a + result 
+    })
+    return sum
 };
